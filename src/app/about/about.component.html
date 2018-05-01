@@ -1,0 +1,30 @@
+<p>
+  app - about:
+    about works [in about.component.html]!
+  :app - about
+</p>
+
+<a href="" (click)="sendMeHome()"> <strong> function "sendMeHome()"
+  {{ '{' }} routing to '_'[empty path] {{ '}' }} </strong> </a>
+
+<div class="container color-light">
+  <div class="col">
+    <p>
+      Id = {{ id }}
+    </p>
+  </div>
+  <div class="col">
+    <p>
+      ItemCount = {{ itemCount }}
+    </p>
+    <ul>
+      <li *ngFor="let goal of goals">
+        beg {{ '{' }}
+        <p class="life-container" >
+          {{goal}}
+        </p>
+        {{ '}' }} end
+      </li>
+    </ul>
+  </div>
+</div>
